@@ -4,13 +4,15 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   line-height: 1.6;
-  color: #333;
+  color: #ffffff;
+  background-color: #01002f;
 }
 
 p,
 .paragraph {
   font-weight: 400;
-  color: #333;
+  /* color: #333; */
+  color: #ffffff;
   font-size: 16px;
   line-height: 26px;
   font-family: "Montserrat", sans-serif;
@@ -21,11 +23,50 @@ h2,
 h3,
 h4,
 h5,
+h6{
+  /* color: #222; */
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.bg-white 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
   color: #222;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   line-height: 1.2;
+}
+
+.bg-light 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bg-white p  {
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+}
+.bg-light p  {
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-text{
+  color: #222;
 }
 
 h1,
@@ -104,7 +145,7 @@ h6,
   padding: 10px 25px;
 }
 
-.btn-primary {
+/* .btn-primary {
   background: #ff0043;
   color: #fff;
   border-color: #ff0043;
@@ -136,20 +177,20 @@ h6,
   background: #cc0036 !important;
   border-color: #cc0036 !important;
   color: #fff;
-}
+} */
 
 body {
-  background-color: #fff;
+  background-color: #01002f;
   overflow-x: hidden;
 }
 
 ::-moz-selection {
-  background: #ff3369;
+  background: #007bff;
   color: #fff;
 }
 
 ::selection {
-  background: #ff3369;
+  background: #007bff;
   color: #fff;
 }
 
@@ -267,11 +308,11 @@ a:hover {
 }
 
 .bg-primary {
-  background: #ff0043 !important;
+  background: #007bff !important;
 }
 
 .text-primary {
-  color: #ff0043 !important;
+  color: #007bff !important;
 }
 
 .text-light {
@@ -353,10 +394,10 @@ a:hover {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #222;
+  color: #007bff;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #ff0043;
+  color: #145faf;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -444,7 +485,7 @@ a:hover {
   line-height: 42px;
   text-align: center;
   color: #fff;
-  background: #ff0043;
+  background: #007bff;
   border-radius: 6px;
 }
 
@@ -454,11 +495,11 @@ a:hover {
 .footer-menu a {
   display: block;
   padding: 10px;
-  color: #333;
+  color: #fff;
   transition: 0.2s ease;
 }
 .footer-menu a:hover {
-  color: #ff0043;
+  color: #0261c7;
 }
 
 /* sidenav */
@@ -865,11 +906,11 @@ pre .copy-to-clipboard {
   display: none;
 }
 .text-red {
-  color: #ff0043;
+  color: #007bff;
 }
 .card-icon-custom {
   font-size: 50px;
-  background: #ff0043;
+  background: #007bff;
   padding: 10px;
   border-radius: 50%;
   color: #fff;
@@ -879,7 +920,7 @@ pre .copy-to-clipboard {
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #fff;
-  background-color: #ff0043;
+  background-color: #007bff;
 }
 .rotation-animation {
   display: inline-block; /* or inline, block, etc. depending on your layout */
@@ -901,7 +942,7 @@ pre .copy-to-clipboard {
   height: 40px;
 }
 .timeline hr {
-  border-top: 3px solid #ff0043;
+  border-top: 3px solid #007bff;
   margin: 0;
   top: 17px;
   position: relative;
@@ -911,7 +952,7 @@ pre .copy-to-clipboard {
   overflow: hidden;
 }
 .timeline .corner {
-  border: 3px solid #ff0043;
+  border: 3px solid #007bff;
   width: 100%;
   position: relative;
   border-radius: 15px;
@@ -935,9 +976,36 @@ pre .copy-to-clipboard {
 .circle {
   padding: 13px 20px;
   border-radius: 50%;
-  background-color: #ff0043;
+  background-color: #007bff;
   color: #fff;
   max-height: 50px;
   z-index: 2;
 }
 
+.dropdown-menu.dropdown-menu-animated {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dropdown-menu.dropdown-menu-center {
+  left: -60% !important;
+}
+.carousel-item {
+  transition: transform 1s ease-in-out;
+}
+
+.section-title{
+  color:#999 !important;
+}
+.nav-pills .nav-link {
+  color: #222;
+}
