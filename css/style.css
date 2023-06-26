@@ -1009,3 +1009,57 @@ pre .copy-to-clipboard {
 .nav-pills .nav-link {
   color: #222;
 }
+
+/* windows view */
+@media (min-width: 991px) {
+  .home-card-height{
+    height: 420px;
+  }
+  .about-card-height{
+    height:10rem;
+  }
+  .pool-card-height{
+    height: 150px;
+  }
+  .affiliate-card-height{
+    height: 120px;
+  }
+  .trading-card-height{
+    height: 120px;
+  }
+  .laptop-web-page{
+    width:76%;
+    margin: 37px 125px;
+  }
+  .laptop-web-slider{
+    width:76%;
+    margin: 37px 125px;
+  }
+}
+/* mobile view */
+@media (max-width: 767px) {
+  .home-card-height{
+    height: auto;
+  }
+  .about-card-height{
+    height: auto;
+  }
+  .pool-card-height{
+    height: auto;
+  }
+  .affiliate-card-height{
+    height: auto;
+  }
+  .trading-card-height{
+    height: auto;
+  }
+  .laptop-web-page{
+    margin: 12px 40px;
+    width: 72%;
+  }
+  .laptop-web-slider{
+    margin: 0px 34px;
+    width: 72%;
+  }
+  
+}
